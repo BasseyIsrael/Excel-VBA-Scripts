@@ -1,5 +1,5 @@
 Sub ImportData()
-    '   Routine to copy cata from an excel readable file to a specified worksheet. File format used here is .xls and all related file types. Interface with the dialogue box
+    '   Routine to copy data from an excel readable file to a specified worksheet. File format used here is .xls and all related file types. Interface with the dialogue box
 
     Dim FileToOpen As Variant   'A placeholder for directory accessibility dialogue
     Dim OpenBook As Workbook    'File to import the data from
