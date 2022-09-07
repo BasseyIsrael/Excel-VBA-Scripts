@@ -11,7 +11,7 @@ Dim xInt As Integer         'Worksheet counter
 xRngAddress = Application.ActiveCell.Address
 On Error Resume Next
 
-Application.ScreenUpdating = False
+Application.ScreenUpdating = False 'Prevent screen response to running code taking time
 For Each xWs In Application.ActiveWorkbook.Sheets
     xName = xWs.Range(xRngAddress).Value
     If xName <> "" Then
@@ -32,5 +32,5 @@ For Each xWs In Application.ActiveWorkbook.Sheets
         End If
     End If
 Next
-Application.ScreenUpdating = True
+Application.ScreenUpdating = True 'Code may be removed if you feel like because this can be turned on automatically after code is run....but......for precaution sake, I'll leave it here.
 End Sub
