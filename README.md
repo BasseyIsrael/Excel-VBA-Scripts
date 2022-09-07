@@ -1,6 +1,8 @@
 # **Excel-VBA-Scripts**
  This repository gives access to various VBA scripts that I use with Excel to improve my productivity. The scripts presented here are in .vb format, and the codes can be easily copied and applied anywhere you would want to apply them. Comments are alse present in the codes to aid understanding of the codes. if you want to collaborate on a project in Excel, you can contact me on israelbssy@gmail.com.
 
+![banner](Excel VBA GH.png)
+
 Please, feel free to contribute to the codes any way you can. Comment any script you would like for me to provide. Cheers!
  
 
