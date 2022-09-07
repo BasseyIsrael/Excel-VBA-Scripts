@@ -1,12 +1,16 @@
-Sub RenameSheet()
-'UpdatebyKutools20191129
-Dim xWs As Worksheet
-Dim xRngAddress As String
-Dim xName As String
-Dim xSSh As Worksheet
-Dim xInt As Integer
+Sub RenameWS()
+
+    '   Routine to rename all worksheets in a workbook according to cell values.   
+
+Dim xWs As Worksheet        'For each of the worksheets in the workbook
+Dim xRngAddress As String   'Address of the cell that contains the new worksheet name for each worksheet. You can make this an input box
+Dim xName As                'Value of the cell from Range
+Dim xSSh As Worksheet       'Worksheet Name Value  
+Dim xInt As Integer         'Worksheet counter
+
 xRngAddress = Application.ActiveCell.Address
 On Error Resume Next
+
 Application.ScreenUpdating = False
 For Each xWs In Application.ActiveWorkbook.Sheets
     xName = xWs.Range(xRngAddress).Value
