@@ -1,127 +1,130 @@
-# Excel-VBA-Scripts
- Here, you can get access to various VBA scripts that I use in Excel to help with productivity. The scripts are available in .vb format with relevant comments and you can apply them as you see fit.
-![banner](assets/Credit_card_approval_banner.png)
+# **Excel-VBA-Scripts**
+ This repository gives access to various VBA scripts that I use with Excel to improve my productivity. The scripts presented here are in .vb format, and the codes can be easily copied and applied anywhere you would want to apply them. Comments are alse present in the codes to aid understanding of the codes. if you want to collaborate on a project in Excel, you can contact me on israelbssy@gmail.com.
+
+Please, feel free to contribute to the codes any way you can. Comment any script you would like for me to provide. Cheers!
+ 
+
 
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/BasseyIsrael/Excel-VBA-Scripts?style=for-the-badge)
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/BasseyIsrael/Excel-VBA-Scripts?style=for-the-badge)
 
 
-Badges [source](https://shields.io/)
+For the Badges [source](https://shields.io/)
 
 # **Productivity comes with your ability to combine the simple tasks to solve the complex problem.**
 
 
-## Author
+## **Author**
 
 - [Israel Bassey](https://github.com/BasseyIsrael)
 
-## All Scripts Contained in this Repo
+## **All Scripts Contained in this Repo**
 
-  - [Check for file existence in a folder](#check-for-file-existence-in-a-folder-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptscheck20file20existencevb)
-  - [Check for worksheet existence in a workbook](#check-for-worksheet-existence-in-a-workbook-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptscheck20ws20existencevb)
-  - [Reset imported data](#reset-imported-data-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptsdata20resetvb)
-  - [Obtain file names from a folder](#obtain-file-names-from-a-folder-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptsfile20namescls)
-  - [Import or copy data from an external worksheet](#import-or-copy-data-from-an-external-worksheet-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptsimport20or20copy20datavb)
-  - [Obtain a list of all worksheets in a workbook](#obtain-a-list-of-all-worksheets-in-a-workbook-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptslist20of20wsvb)
-  - [Lookup data in a workbook with multiple criteria](#lookup-data-in-a-workbook-with-multiple-criteria-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptslookup20datavb)
-  - [Rename worksheets dynamically](#rename-worksheets-dynamically-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptsrename20worksheetsvb)
-  - [Save a worksheet as pdf and send with email](#save-a-worksheet-as-pdf-and-send-as-email-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptssave20and20send20emailvb)
-  - [Save all worksheets as stand-alone CSV files](#save-all-worksheets-as-stand-alone-csv-files-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptssave20as20csvvb)
-  - [Save all worsheets as stand-alone XLSX files](#save-all-worsheets-as-stand-alone-xlsx-files-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptssave20as20xlsxvb)
-  - [Save a workbook as specific file](#save-a-workbook-as-specific-file-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptssave20filevb)
-  - [Manage screen view](#manage-screen-view-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptsscreen20settingsvb)
-  - [Select a file from a folder](#select-a-file-from-a-folder-viewhttpsgithubcombasseyisraelexcel-vba-scriptsblobmainvba20scriptsselect20a20filevb)
+  - [Check for file existence in a folder](#check-for-file-existence-in-a-folder-view)
+  - [Check for worksheet existence in a workbook](#check-for-worksheet-existence-in-a-workbook-view)
+  - [Reset imported data](#reset-imported-data-view)
+  - [Obtain file names from a folder](#obtain-file-names-from-a-folder-view)
+  - [Import or copy data from an external worksheet](#import-or-copy-data-from-an-external-worksheet-view)
+  - [Obtain a list of all worksheets in a workbook](#obtain-a-list-of-all-worksheets-in-a-workbook-view)
+  - [Lookup data in a workbook with multiple criteria](#lookup-data-in-a-workbook-with-multiple-criteria-view)
+  - [Rename worksheets dynamically](#rename-worksheets-dynamically-view)
+  - [Save a worksheet as pdf and send with email](#save-a-worksheet-as-pdf-and-send-with-email-view)
+  - [Save all worksheets as stand-alone CSV files](#save-all-worksheets-as-stand-alone-csv-files-view)
+  - [Save all worsheets as stand-alone XLSX files](#save-all-worsheets-as-stand-alone-xlsx-files-view)
+  - [Save a workbook as specific file](#save-a-workbook-as-specific-file-view)
+  - [Manage screen view](#manage-screen-view-view)
+  - [Select a file from a folder](#select-a-file-from-a-folder-view)
   
 
 
 
 
-## Check for file existence in a folder. [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20File%20Existence.vb)
-
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
-
-## Check for worksheet existence in a workbook. [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20WS%20Existence.vb)
-
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
-
-## Reset imported data [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb)
-
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
-
-## Obtain file names from a folder [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/File%20Names.cls)
-
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
+## **Check for file existence in a folder.** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20File%20Existence.vb)
 
 
-## Import or copy data from an external worksheet [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Import%20or%20Copy%20Data.vb)
-
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
+This script provides the user the option to search through a folder to check if the filenames present in a worksheet range are present. the code can be applied as a syand alone to keep track of a personal library or it can also be used on a larger scale for document control in in organizational setting. The script requires the user to input the folder directory to be checked through. A function is also present in the script that outputs a true or false. This can be used in simplpe cases. Click on "View" for access the code. Feel free to modify it to your personal use.
 
 
-## Obtain a list of all worksheets in a workbook [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/List%20of%20WS.vb)
-
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
-
-## Lookup data in a workbook with multiple criteria [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Lookup%20Data.vb)
-
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
+## **Check for worksheet existence in a workbook.**[(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20WS%20Existence.vb)
 
 
-## Rename worksheets dynamically [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Rename%20Worksheets.vb)
+When working with large files with multiple worksheets, it's easy to lose track of a worksheet especially when all you want to do is to check if the worksheet is present in the workbook before moving on to a new workbook. This script helps the user to quickly scan through the worksheets in a given workbook to confirm the existence of a given worksheet. With this, file searching becomes way easier especially for large files. You can expand this code to achieve more like open the specific worksheet with just one line of code. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
+## **Reset imported data** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb)
+
+
+Following a data import from an external source, needs might arise to reset the data, clear contents and reload a new set of data especially when working with batch data or working on a template. Analysts may find this useful when building dashboards and there is need to reload data.
+Click on "View" to access the code. Feel free to modify it for your personal use.
+
+
+## **Obtain file names from a folder** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/File%20Names.cls)
+
+
+This script gives the user the option to obtain the list if files present in a folder based on a file type. The list obtained from the code is printed on an excel worksheet already specified. This is especially useful when managing a library (large scale or personal). Beyond the management of a library,m this code can also be applied in document control when creating a master list of documents when it is not provided by default by the document management system already in place.
+Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 
-## Save a worksheet as pdf and send with email [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20and%20send%20email.vb)
+## **Import or copy data from an external worksheet** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Import%20or%20Copy%20Data.vb)
 
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
 
-## Save all worksheets as stand-alone CSV files [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20CSV.vb)
+This script gives the user the ability to import data from an external excel source. The script opens a file selection window where the source file can be selected and the data is copied to the new worksheet and pasted as values. A box is also needed for the filename to be printed to. The imported data can be used by ana analyst to perform a form of routine analysis on a template, or create dashboards when working woth batch data. A script is also provided to clear the imported data and it can be accessed [here](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb).
+Click on "View" to access the code. Feel free to modify it for your personal use.
 
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
 
-## Save all worsheets as stand-alone XLSX files [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
 
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
+## **Obtain a list of all worksheets in a workbook** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/List%20of%20WS.vb)
 
-## Save a workbook as specific file [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20File.vb)
 
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
-## Manage screen view [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Screen%20Settings.vb)
+A management technique for handling large files is provided with this script. Here, you can provide a list of all the worksheets present in a workbook. This is mostly applicable in an organizational context for reports logging and access management.the use of this script can help speed up the process of urgent reporting for multiple files.
+Click on "View" to access the code. Feel free to modify it for your personal use.
 
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
 
-## Select a file from a folder [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Lookup data in a workbook with multiple criteria** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Lookup%20Data.vb)
 
-```markdown
-This app predicts if an applicant will be approved for a credit card or not. Each time there is a hard enquiry your credit score is affected negatively. This app predict the probability of being approved without affecting your credit score. This app can be used by applicant who wants to find out if they will be approved for a credit card without affecting their credit score.
-```
+
+Here, a function is provided is provided to perform lookup on data more easily than the excel builtin lookup functions. Arguments are provided in the function   
+Click on "View" to access the code. Feel free to modify it for your personal use.
+
+
+## **Rename worksheets dynamically** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Rename%20Worksheets.vb)
+
+
+Click on "View" to access the code. Feel free to modify it for your personal use.
+
+
+
+## **Save a worksheet as pdf and send with email** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20and%20send%20email.vb)
+
+Click on "View" to access the code. Feel free to modify it for your personal use.
+
+## **Save all worksheets as stand-alone CSV files** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20CSV.vb)
+
+
+Click on "View" to access the code. Feel free to modify it for your personal use.
+
+
+## **Save all worsheets as stand-alone XLSX files** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
+
+
+Click on "View" to access the code. Feel free to modify it for your personal use.
+
+
+## **Save a workbook as specific file** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20File.vb)
+
+
+Click on "View" to access the code. Feel free to modify it for your personal use.
+
+
+## **Manage screen view** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Screen%20Settings.vb)
+
+
+Click on "View" to access the code. Feel free to modify it for your personal use.
+
+
+## **Select a file from a folder** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+
+
+Click on "View" to access the code. Feel free to modify it for your personal use.
