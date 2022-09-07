@@ -1,6 +1,6 @@
 Sub ListPDFFiles()
 
-    '   Routine to obtain a list of all the pdf files contained in a folder, givene the folder path.
+    '   Routine to obtain a list of all the pdf files contained in a folder, given the folder path.
      
     Dim objFSO As Object
     Dim objFolder As Object
