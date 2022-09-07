@@ -1,14 +1,21 @@
-Sub Full_screen()
-    If ActiveWindow.DisplayWorkbookTabs = False And ActiveWindow.DisplayHorizontalScrollBar = False And ActiveWindow.DisplayVerticalScrollBar = False And _
-    Application.DisplayFullScreen = True Then
+Sub SetFull_screen()
+    '   This routine helps you activate the excel full screen feature. It best works when connected to a button or a shortcut. 
+
+    '   Check to see if fullscreen is already turned on
+    If  ActiveWindow.DisplayWorkbookTabs = False And _
+        ActiveWindow.DisplayHorizontalScrollBar = False And _
+        ActiveWindow.DisplayVerticalScrollBar = False And _
+        Application.DisplayFullScreen = True _
     
-    MsgBox "Full Screen already turned on"
+    Then
+    
+        MsgBox "Full Screen already turned on"
     
     Else
-    ActiveWindow.DisplayWorkbookTabs = False
-    ActiveWindow.DisplayHorizontalScrollBar = False
-    ActiveWindow.DisplayVerticalScrollBar = False
-    Application.DisplayFullScreen = True
+        ActiveWindow.DisplayWorkbookTabs = False
+        ActiveWindow.DisplayHorizontalScrollBar = False
+        ActiveWindow.DisplayVerticalScrollBar = False
+        Application.DisplayFullScreen = True
     
     End If
     
@@ -16,14 +23,22 @@ End Sub
 
 Sub ExitFull_screen()
 
-    If ActiveWindow.DisplayWorkbookTabs = True And Application.DisplayFullScreen = False And ActiveWindow.DisplayHorizontalScrollBar = True Then
+    '   This routine helps you deactivate the excel full screen feature. It best works when connected to a button or a shortcut. 
+
+    '   Check to see if fullscreen is already turned off
+
+    If  ActiveWindow.DisplayWorkbookTabs = True And _
+        Application.DisplayFullScreen = False And _
+        ActiveWindow.DisplayHorizontalScrollBar = True _
     
-    MsgBox "Full Screen already turned off"
+    Then
+    
+        MsgBox "Full Screen already turned off"
     
     Else
-    ActiveWindow.DisplayWorkbookTabs = True
-    Application.DisplayFullScreen = False
-    ActiveWindow.DisplayHorizontalScrollBar = True
+        ActiveWindow.DisplayWorkbookTabs = True
+        Application.DisplayFullScreen = False
+        ActiveWindow.DisplayHorizontalScrollBar = True
     
     End If
 End Sub
