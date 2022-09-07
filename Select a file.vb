@@ -1,6 +1,7 @@
 Function SelectFile() As String
- 
-    'Open the file dialog
+    '   Function to slecet a file from a dialogue box, not minding the file format.
+    
+        'Open the file dialog
     With Application.FileDialog(msoFileDialogOpen)
         .AllowMultiSelect = False
         .Show

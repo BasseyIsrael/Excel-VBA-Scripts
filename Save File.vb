@@ -9,7 +9,6 @@ Function SaveFileAs( _
   Workbooks(WorkBookName).SaveAs _
     FileName:=FileName
     
-    
     ActiveWorkbook.SaveAs Filename:=thisWb.Path & "\new workbook.xlsx"
     ActiveWorkbook.Close savechanges:=False
 End Function
