@@ -7,7 +7,7 @@ Please, feel free to contribute to the codes any way you can. Comment any script
 
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/BasseyIsrael/Excel-VBA-Scripts?style=for-the-badge)
-![GitHub repo file count](https://img.shields.io/github/directory-file-count/BasseyIsrael/Excel-VBA-Scripts?style=for-the-badge)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/BasseyIsrael/Excel-VBA-Scripts/VBA%20Scripts?style=for-the-badge)
 
 
 For the Badges [source](https://shields.io/)
