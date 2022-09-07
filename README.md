@@ -43,13 +43,13 @@ For the Badges [source](https://shields.io/)
 ## **Check for file existence in a folder.** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20File%20Existence.vb)
 
 
-This script provides the user the option to search through a folder to check if the filenames present in a worksheet range are present. the code can be applied as a syand alone to keep track of a personal library or it can also be used on a larger scale for document control in in organizational setting. The script requires the user to input the folder directory to be checked through. A function is also present in the script that outputs a true or false. This can be used in simplpe cases. Click on "View" for access the code. Feel free to modify it to your personal use.
+This script provides the user the option to search through a folder to check if the filenames present in a worksheet range are present in teh folder. The code can be applied as a stand-alone to keep track of a personal library, or it can also be used on a larger scale for document control in an organizational setting. The script requires the user to input the folder directory to be scanned through. A function is also present in the script that outputs a true or false. This can be used in simple cases. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Check for worksheet existence in a workbook.**[(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20WS%20Existence.vb)
 
 
-When working with large files with multiple worksheets, it's easy to lose track of a worksheet especially when all you want to do is to check if the worksheet is present in the workbook before moving on to a new workbook. This script helps the user to quickly scan through the worksheets in a given workbook to confirm the existence of a given worksheet. With this, file searching becomes way easier especially for large files. You can expand this code to achieve more like open the specific worksheet with just one line of code. Click on "View" to access the code. Feel free to modify it for your personal use.
+When working with large files with multiple worksheets, it's easy to lose track of a worksheet especially when all you want to do is to check if the worksheet is present in the workbook before moving on to a new workbook. This script helps the user to quickly scan through the worksheets in a given workbook to confirm the existence of a given worksheet. With this, file searching becomes way easier especially for large files. You can expand this code to achieve more, like opening the specific worksheet with just one line of code. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Reset imported data** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb)
@@ -78,53 +78,57 @@ Click on "View" to access the code. Feel free to modify it for your personal use
 ## **Obtain a list of all worksheets in a workbook** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/List%20of%20WS.vb)
 
 
-A management technique for handling large files is provided with this script. Here, you can provide a list of all the worksheets present in a workbook. This is mostly applicable in an organizational context for reports logging and access management.the use of this script can help speed up the process of urgent reporting for multiple files.
+A management technique for handling large files is provided with this script. Here, you can provide a list of all the worksheets present in a workbook. This is mostly applicable in an organizational context for reports logging and access management. The use of this script can help speed up the process of urgent reporting for multiple files.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Lookup data in a workbook with multiple criteria** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Lookup%20Data.vb)
 
 
-Here, a function is provided is provided to perform lookup on data more easily than the excel builtin lookup functions. Arguments are provided in the function   
+Here, a function is provided to perform lookup on data more easily than the excel builtin lookup functions. Arguments are provided in the function and they are easy to use. Use this custom function in your workbook or you can attach iit to a larger block of code as you would like to use it.  
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Rename worksheets dynamically** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Rename%20Worksheets.vb)
 
 
+This script helps one to rename all the worksheets in your workbook based on cell value. When there are several worksheets in a workbook, renaming all of them one after the other could become a herculean task. However, with the extreme likelihood that there is a uniformity in the cell header or a specific defining cell common to all the worksheets, this script can easily attach names to all the worksheets bases on those defining cell values. The code block is expandable to carry more functionalities.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 
 ## **Save a worksheet as pdf and send with email** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20and%20send%20email.vb)
 
+In this case, reporting and sending updates is optimized by giving a user the ability to automatically save a reporting sheet as a pdf file into a specified file location and sending an email to a specific recipient with the saved pdf file attached to the email on outlook. A use case of this script is when a routine update on a specific analysis is required by a manager or a set of staff. A window to select the folder is used in this case however, one can simply change the save folder to a constant folder path. A date cell is also advisable to have so it can be easy to track the files  that have been saved. In an organizational context, a cell containing the document number can be used in place of "current date" for the filename.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Save all worksheets as stand-alone CSV files** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20CSV.vb)
 
-
+Still working across multiple worksheets in a workbook, a script is provided to give the user the ability to save all the worksheets available in the workbook as separate csv files. A naming convention is also provided in the script to avoid the hassle of having to manually input the names of all the files as they are saved.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Save all worsheets as stand-alone XLSX files** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
 
-
+Still working across multiple worksheets in a workbook, a script is provided to give the user the ability to save all the worksheets available in the workbook as separate csv files. A naming convention is also provided in the script to avoid the hassle of having to manually input the names of all the files as they are saved.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Save a workbook as specific file** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20File.vb)
 
-
+With this script, one can quickly save a file in any specified file format/extension by the click of a button or an assigned shortcut. This script, though simple, has many applications including when building userforms or building dashboards in excel. This can also be extended to other Microsoft Apps that support VBA.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Manage screen view** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Screen%20Settings.vb)
 
 
+When working with dashboards, it is sometimes desirable to view the worksheet in fulll screen format to reduce distractions and provide real estate for analysis. Two sub-routines are provided here that help the user to toggle full screen in excel. With this, presentations using excel becomes way easier and more space is provided for analysis elements.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Select a file from a folder** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
 
+You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
 Click on "View" to access the code. Feel free to modify it for your personal use.
