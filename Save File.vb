@@ -3,6 +3,7 @@ Function SaveFileAs( _
   FilePath as string
   Optional WorkbookName as Workbook = ActiveWorkbook.Name) as Boolean
   
+  ' Function to save file as an excel file with "xlsx" file format
   
   
   Workbooks(WorkBookName).SaveAs _
