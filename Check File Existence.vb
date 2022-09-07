@@ -1,52 +1,86 @@
-Sub FileExistList()
+Function ExistCheck( _
+    ByVal FilePath As String, _
+    ByVal FileName As String, _
+    Optional ByVal FileType As String = "NotGiven") As 
     
-    'A variation of the FillFileNamesFromList routine. 
-    'Takes a list of file names and tests whether they exist in a given 
-    '  directory. A "Y" is returned if the file exists, and a "N" is 
-    '  returned if it does not exist. These values can be changed
-    '  in the definitions below.
-    '
-    'Requires the following functions:
-    '  FindLastRow
-    '  FileExist
+    '   This function checks a file's existence. The function is called in the routime used to print the result of the existence check.
 
-    'Define all the variables/options.
-    Dim i As Long           'Iteration counter
-    Dim LastRow As Long     'Last row to evaluate
-    Dim FirstRow As Long    'First row to evaluate
-    Dim fPath As String     'Directory where files should be
-    Dim fName As String     'File name (pulled from spreadsheet)
-    Dim fType As String     'File type (required by FileExist; can be used as array)
-    Dim nCol As Long        'Column where file names live
-    Dim rCol As Long        'Column where results are printed
+    Dim fName As String
+
+    ExistCheck = False
+    
+    FilePath = If(Right(FilePath, 1) <> "\", FilePath & "\", FilePath)
+    
+    
+    '   Extension check to decide on output
+    If FileType <> "NotGiven" Then
+
+        If Right(FileName, 1) = "." Then
+            FileName = Left(FileName, Len(FileName) - 1)
+        End If
+
+        If Left(FileType, 1) <> "." Then
+            FileType = "." & FileType
+        End If
+        
+        FullName = FilePath & FileName & FileType
+        
+    Else
+        Fullame = FilePath & FileName
+        
+    End If
+      
+    If Dir(fName) <> "" Then
+        ExistCheck = True
+    End If
+        
+End Function
+
+Sub FileExistence()
+    
+    '   A routine for checking if a file exists in a folder location. 
+    '   You provide a list of file names and the script goes through the list and checks if they exist in the folderlocation 
+    '   If file exists, "Available" is returned, and "Not Available" is returned if it doesnt exist.
+    '   NOTE: The status of the file availability can be changes as I have declared them as variables 
+
+    '   This requires the "ExistCheck" Function
+    
+
+    '   Define all the variables/options.
+    Dim i As Long           'Iteration counter should be able to carry up to one million counts to avoid ocunt limit in excel rows count
+    Dim folPath As String     'Folder Location where files should be
+    Dim fName As String     'File name to check for (pulled from spreadsheet)
+    Dim fType As String     'File type (required by ExistCheck; can be used as array)
+    Dim listCol As Long     'Column where file names live
+    Dim resCol As Long      'Column where results are printed
     Dim rTrue As String     'Text to return if file exists
-    Dim rFalse As String    'Text to return if file does not exist
+    Dim rFalse As String    'Text to return if file does not exist 
 
 
-    FirstRow = 2
-    LastRow = FindLastRow(3)
+    FirstRow = InputBox("Enter first row number", "First Row Number")
+    LastRow = InputBox("Enter Last row number", "Last Row Number")
     
-    nCol = 3
-    rCol = 2
+    listCol = InputBox("Enter column containing file list", "File list column")
+    resCol = nCol+1
 
-    fPath = "V:\Corporate\Tax\Public\Axip\Tx_Audit\Invoices\"
+    folPath = InputBox("Enter Folder Path", "Folder Path")
     
-    rTrue = "Y"
-    rFalse = "File not found"
+    resTrue = "Available"
+    resFalse = "Not Available"
 
 
-    'Loop through row [fRow] through [lRow]
-    '  take the text in column [nCol] and look for it within [fPath]
-    '  If the file exists return [rTrue]; if it does not
-    '  return [rFalse] in cell (i, rCol)
+    '   Loop through row [firstRow] through [lastRow]
+    '  take the text in column [listCol] and look for it within [folPath]
+    '  If the file exists return [resTrue]; if it does not
+    '  return [resFalse] in cell (i, resCol)
     
     For i = FirstRow To LastRow
-        fName = Cells(i, nCol)
+        fName = Cells(i, listCol)
         
-        If FileExist(fPath, fName) Then
-            Cells(i, rCol) = rTrue
+        If ExistCheck(folPath, fName) Then
+            Cells(i, resCol) = resTrue
         Else
-            Cells(i, rCol) = rFalse
+            Cells(i, resCol) = resFalse
         End If
     Next i
 
