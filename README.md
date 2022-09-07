@@ -4,8 +4,8 @@
 
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.10%2B-lightgrey)
-![GitHub last commit](https://img.shields.io/github/last-commit/BasseyIsrael/Excel-VBA-Scripts?style=flat-square)
-![GitHub repo file count](https://img.shields.io/github/directory-file-count/BasseyIsrael/Excel-VBA-Scripts?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/BasseyIsrael/Excel-VBA-Scripts)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/BasseyIsrael/Excel-VBA-Scripts)
 
 
 
