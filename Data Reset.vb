@@ -1,14 +1,16 @@
 Sub DataReset()
 
-' Keyboard Shortcut: Ctrl+Shift+T
+' Routine to reset a data import nad clear worksheet
+
     Dim answer As VbMsgBoxResult
+    
+    'Confirm user action
     answer = MsgBox("Hello " & Excel.Application.UserName & ", Are You Sure You Want to Reset Your Data? All running computations will be lost. It is advisable to save your work.", vbYesNo + vbQuestion + vbDefaultButton2, "Reset Data")
+    
     If answer = vbYes Then
-        Sheets("Imported File").Select
+        Sheets("Imported_File_Sheet").Select
         Cells.Select
         Selection.ClearContents
-        Sheets("Data").Select
-        Range("K7").Select
         ActiveSheet.Shapes.Range(Array("FIleNameBox")).Select
         Selection.ShapeRange(1).TextFrame2.TextRange.Characters.Text = " "
         With Selection.ShapeRange(1).TextFrame2.TextRange.Characters(1, 1). _

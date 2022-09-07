@@ -1,7 +1,6 @@
 Sub SaveWorksheetsAsCsv()
 
-' This macro takes all the Worksheets within your active Workbook and saves it as separate files.
-' Change parameters below to set export directory.
+'Routine to help you save all Worksheets in a Workbook as stand alone CSV files
 
 Dim WS As Excel.Worksheet
 Dim SaveToDirectory As String
@@ -11,13 +10,25 @@ Dim CurrentFormat As Long
 CurrentWorkbook = ThisWorkbook.FullName
 CurrentFormat = ThisWorkbook.FileFormat
 
-' Update directory to save files
-' Use backslashes (as opposed to Python or R)
-SaveToDirectory = "C:\test\"
+' Specify the Directory that you would like your XLSX files saved in
+' The file names of the Workbooks is a function of the names of the Worksheets
+'   SaveToDirectory = InputBox("Enter Folder Path", "Folder Path")
+
+namePrefix = InputBox("Enter a name prefix for all files", "Name Prefix")
+
+With Application.FileDialog(msoFileDialogFolderPicker)
+        
+        If .Show = True Then
+            DestFolder = .SelectedItems(1)
+        Else
+            MsgBox "You must specify a folder to save the PDF into." & vbCrLf & vbCrLf & "Press OK to exit.", vbCritical, "Must Specify Destination Folder"    
+        End If
+        
+    End With
 
 For Each WS In ThisWorkbook.Worksheets
     Sheets(WS.Name).Copy
-    ActiveWorkbook.SaveAs Filename:=SaveToDirectory & ThisWorkbook.Name & "-" & WS.Name & ".csv", FileFormat:=xlCSV
+    ActiveWorkbook.SaveAs Filename:=DestFolder & Application.PathSeparator & namePrefix & "-" & WS.Name & ".csv", FileFormat:=xlCSV
     ActiveWorkbook.Close savechanges:=False
     ThisWorkbook.Activate
 Next

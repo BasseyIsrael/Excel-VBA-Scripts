@@ -1,7 +1,13 @@
-'https://www.vitoshacademy.com/vba-vlookup-with-multiple-criteria-in-excel-without-excel-formula-but-with-vba/
+
+
+'   Adapted from Vitosh Academy
+'   https://www.vitoshacademy.com/vba-vlookup-with-multiple-criteria-in-excel-without-excel-formula-but-with-vba/
 
 Function GetLookupDataTriple(wks As Worksheet, tableName As String, lookIntoColumn As String, myArray As Variant) As Variant
     
+    '   A function to achieve lookup of data with multiple criteria. use this function as a custom function in your Excel workbooks.
+
+
     Dim lo As ListObject
     Set lo = wks.ListObjects(tableName)
     

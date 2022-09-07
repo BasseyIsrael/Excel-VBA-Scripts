@@ -1,8 +1,7 @@
 Private Sub Dynamic_Index()
-'INSTRUCTIONS TO CREATE A DYNAMIC INDEX OF WORKSHEETS
-'You have to first insert a new sheet called 'Index'.
-'Right click on the sheet to 'View Code'
-'Run code as normal
+
+
+'Create a list of all worksheets in a workbook. Works dynamically.
 'Adapted from ExtendOffice.com
 'https://www.extendoffice.com/documents/excel/2653-excel-dynamic-list-of-worksheet-names.html
    
@@ -12,11 +11,13 @@ Private Sub Dynamic_Index()
     Dim scrUpdateState As Long
     Application.ScreenUpdating = False
     xRow = 1
+    
     With Me
         .Columns(1).ClearContents
         .Cells(1, 1) = "INDEX"
         .Cells(1, 1).Name = "Index"
     End With
+    
     For Each xSheet In Application.Worksheets
         If xSheet.Name <> Me.Name Then
             xRow = xRow + 1

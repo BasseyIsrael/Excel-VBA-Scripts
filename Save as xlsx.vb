@@ -1,22 +1,35 @@
 Sub SaveWorksheetsAsXLSX_And_Encrypt()
 
-'This macro allows you to save all Worksheets in a Workbook as separate XLSX files
-'The Password argument allows you to encrypt the Workbooks
+'Routine to help you save all Worksheets in a Workbook as stand alone XLSX files
 
 Dim WS As Excel.Worksheet
 Dim SaveToDirectory As String
 Dim CurrentWorkbook As String
 Dim CurrentFormat As Long
+Dim namePrefix As String
+
 CurrentWorkbook = ThisWorkbook.FullName
 CurrentFormat = ThisWorkbook.FileFormat
 
 ' Specify the Directory that you would like your XLSX files saved in
 ' The file names of the Workbooks is a function of the names of the Worksheets
-SaveToDirectory = "\folderA\subfolderA\"
+'   SaveToDirectory = InputBox("Enter Folder Path", "Folder Path")
+
+namePrefix = InputBox("Enter a name prefix for all files", "Name Prefix")
+
+With Application.FileDialog(msoFileDialogFolderPicker)
+        
+        If .Show = True Then
+            DestFolder = .SelectedItems(1)
+        Else
+            MsgBox "You must specify a folder to save the PDF into." & vbCrLf & vbCrLf & "Press OK to exit.", vbCritical, "Must Specify Destination Folder"    
+        End If
+
+    End With
+
 For Each WS In ThisWorkbook.Worksheets
     Sheets(WS.Name).Copy
-    ActiveWorkbook.SaveAs Filename:=SaveToDirectory & "Data Analysis 2019" & "- " & WS.Name & ".xlsx", FileFormat:=51, _
-    Password:="D1FF1ULTP455W0RD"
+    ActiveWorkbook.SaveAs Filename:=DestFolder & Application.PathSeparator & namePrefix & "- " & WS.Name & ".xlsx", FileFormat:=51, _
     ActiveWorkbook.Close savechanges:=False
     ThisWorkbook.Activate
 Next

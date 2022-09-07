@@ -1,4 +1,7 @@
-Sub RectangleRoundedCorners3_Click()
+Sub SaveAndSend()
+    
+    'Routine to save a specific worksheet in your workbook as a pdf file and send a report to a specific individual.
+
     On Error GoTo ErrHandler
     
     ' SET Outlook APPLICATION OBJECT.
@@ -12,28 +15,26 @@ Sub RectangleRoundedCorners3_Click()
     Dim OpenPDFAfterCreating As Boolean, AlwaysOverwritePDF As Boolean, DisplayEmail As Boolean
     Dim OverwritePDF As VbMsgBoxResult
     
-    OpenPDFAfterCreating = True
+    OpenPDFAfterCreating = True 'to check the saved worksheet
     AlwaysOverwritePDF = False
     
      With Application.FileDialog(msoFileDialogFolderPicker)
         
         If .Show = True Then
-        
             DestFolder = .SelectedItems(1)
-            
         Else
-        
-            MsgBox "You must specify a folder to save the PDF into." & vbCrLf & vbCrLf & "Press OK to exit this macro.", vbCritical, "Must Specify Destination Folder"
-                
-            Exit Sub
+            MsgBox "You must specify a folder to save the PDF into." & vbCrLf & vbCrLf & "Press OK to exit.", vbCritical, "Must Specify Destination Folder"
             
         End If
-        
     End With
     
-    CurrentDate = Workbooks("PEGIS GLOBAL SERVICES PERSONNEL CREDENTIALS STATUS.XLSM").Sheets("Data Summary").Range("C2").Value
-    PDFFile = DestFolder & Application.PathSeparator & "Staff Credential Update" _
+    'Obtain date from a cell so the file can be saved with the data in the filename.
+    CurrentDate = Workbooks("input_your_active_workbook").Sheets("input_your_active_sheet").Range("C2").Value
+    
+    PDFFile = DestFolder & Application.PathSeparator & "name_you_want" _
                 & "_" & CurrentDate & ".pdf"
+
+    'Handle file overwrite
     If Len(Dir(PDFFile)) > 0 Then
     
         If AlwaysOverwritePDF = False Then
@@ -74,13 +75,13 @@ Sub RectangleRoundedCorners3_Click()
     End If
    
 
-    'Create the PDF
-    Workbooks("PEGIS GLOBAL SERVICES PERSONNEL CREDENTIALS STATUS.XLSM").Sheets("Data Summary").ExportAsFixedFormat Type:=xlTypePDF, Filename:=PDFFile, Quality:=xlQualityStandard, IncludeDocProperties:=True, IgnorePrintAreas _
+    'Send the email
+    Workbooks("input_your_active_workbook").Sheets("input_your_active_sheet").ExportAsFixedFormat Type:=xlTypePDF, Filename:=PDFFile, Quality:=xlQualityStandard, IncludeDocProperties:=True, IgnorePrintAreas _
         :=False, OpenAfterPublish:=OpenPDFAfterCreating
     With objEmail
-        .To = "Fadoyeni.tunji@pegisglobal.com"
-        .Subject = "Personnel Credentials Status"
-        .Body = "Dear Sir, Kindly find the update on employee credentials attached to the email. Regards."
+        .To = "input_mail_recipient"
+        .Subject = "input_email_subject"
+        .Body = "input_mail_body"
         .Attachments.Add PDFFile
         .Send
     End With

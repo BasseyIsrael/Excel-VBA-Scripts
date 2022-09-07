@@ -1,33 +1,17 @@
-Function WsExist( _
+Function xWsExist( _
     WsName As String) As Boolean
+   
+    '   Function to check the existence of a worksheet in a workbook
 
-    Dim Ws As Worksheet
+    Dim xWs As Worksheet
 
-    WsExist = False
+    xWsExist = False
        
-    For Each Ws In Worksheets
-        If Ws.Name = WsName Then
-            WsExist = True
+    For Each xWs In Worksheets
+        If xWs.Name = xWsName Then
+            xWsExist = True
             Exit Function
         End If
-    Next Ws
+    Next xWs
     
 End Function
-
-
-
-Sub SampleUsage()
-    
-    'Sample usage for WsExist()
-    
-    Dim WsName as String
-    
-    WsName = "Test"
-    
-    If WsExist(WsName) Then
-        MsgBox "Worksheet " & WsName & " exists in this workbook."
-    Else
-        MsgBox "Worksheet " & WsName & " does not exists in this workbook."
-    End If
-    
-End Sub
