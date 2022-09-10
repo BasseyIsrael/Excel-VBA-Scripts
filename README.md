@@ -108,7 +108,7 @@ Still working across multiple worksheets in a workbook, a script is provided to 
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Save all worsheets as stand-alone XLSX files** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
+## **Save all worksheets as stand-alone XLSX files** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
 
 Still working across multiple worksheets in a workbook, a script is provided to give the user the ability to save all the worksheets available in the workbook as separate csv files. A naming convention is also provided in the script to avoid the hassle of having to manually input the names of all the files as they are saved.
 Click on "View" to access the code. Feel free to modify it for your personal use.
