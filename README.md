@@ -37,7 +37,7 @@ For the Badges [source](https://shields.io/)
   - [Select a file from a folder](#select-a-file-from-a-folder-view)
   
 
-
+<div align='justify'>
 
 
 ## **Check for file existence in a folder.** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20File%20Existence.vb)
