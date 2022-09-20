@@ -1,3 +1,8 @@
+<h1 align="center">
+  <img src="Excel VBA GH.png" alt="Excel VBA Banner" />
+</h1>
+
+
 # **Excel-VBA-Scripts**
  This repository gives access to various VBA scripts that I use with Excel to improve my productivity. The scripts presented here are in .vb format, and the codes can be easily copied and applied anywhere you would want to apply them. Comments are also present in the codes to aid understanding of the codes. if you want to collaborate on a project in Excel, you can contact me on israelbssy@gmail.com.
 
