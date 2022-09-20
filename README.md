@@ -1,5 +1,5 @@
 # **Excel-VBA-Scripts**
- This repository gives access to various VBA scripts that I use with Excel to improve my productivity. The scripts presented here are in .vb format, and the codes can be easily copied and applied anywhere you would want to apply them. Comments are alse present in the codes to aid understanding of the codes. if you want to collaborate on a project in Excel, you can contact me on israelbssy@gmail.com.
+ This repository gives access to various VBA scripts that I use with Excel to improve my productivity. The scripts presented here are in .vb format, and the codes can be easily copied and applied anywhere you would want to apply them. Comments are also present in the codes to aid understanding of the codes. if you want to collaborate on a project in Excel, you can contact me on israelbssy@gmail.com.
 
 Please, feel free to contribute to the codes any way you can. Comment any script you would like for me to provide. Cheers!
  
@@ -108,7 +108,7 @@ Still working across multiple worksheets in a workbook, a script is provided to 
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Save all worsheets as stand-alone XLSX files** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
+## **Save all worksheets as stand-alone XLSX files** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
 
 Still working across multiple worksheets in a workbook, a script is provided to give the user the ability to save all the worksheets available in the workbook as separate csv files. A naming convention is also provided in the script to avoid the hassle of having to manually input the names of all the files as they are saved.
 Click on "View" to access the code. Feel free to modify it for your personal use.
