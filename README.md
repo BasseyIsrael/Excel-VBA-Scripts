@@ -40,7 +40,7 @@ For the Badges [source](https://shields.io/)
   - [Save a workbook as specific file](#save-a-workbook-as-specific-file-view)
   - [Manage screen view](#manage-screen-view-view)
   - [Select a file from a folder](#select-a-file-from-a-folder-view)
-  - [Upload/Add data to a Database in SQL Server](#Upload-Data-to-SQL-Server)
+  - [Upload/Add data to a Database in SQL Server](#upload-Data-to-SQL-Server)
   
 
 <div align='justify'>
