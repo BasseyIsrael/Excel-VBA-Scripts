@@ -40,6 +40,7 @@ For the Badges [source](https://shields.io/)
   - [Save a workbook as specific file](#save-a-workbook-as-specific-file-view)
   - [Manage screen view](#manage-screen-view-view)
   - [Select a file from a folder](#select-a-file-from-a-folder-view)
+  - [Upload/Add data to a Database in SQL Server](#Upload-Data-to-SQL-Server)
   
 
 <div align='justify'>
@@ -137,3 +138,7 @@ Click on "View" to access the code. Feel free to modify it for your personal use
 
 You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
 Click on "View" to access the code. Feel free to modify it for your personal use.
+  
+## **Upload Data to SQL Server** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Upload%20Item%20to%20SQL%20Server%20DB.vb)
+ 
+When working with live data, it might not always be very convenient to do so with MS Excel. For this, you would need to upload your data to a database a direct query of your data can be performed using any analysis tool. This script creates a connection with a/an SQL Server database and following an event, the data is uploaded or added to a database on a connected table/tables. You can also write simple SQL quaries on your data in the VB- Environment. This is especially useful when working with DirectQuery in Power BI. Click on "View" to access the code. Feel free to modify it for your personal use.
